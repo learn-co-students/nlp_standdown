@@ -14,7 +14,7 @@ nltk_books = [nltk.corpus.gutenberg.raw(title)
                  for title in nltk.corpus.gutenberg.fileids()]
 
 # convert list to dataframe with titles as the index.
-nltk_books = pd.DataFrame(all_sentences, 
+nltk_books = pd.DataFrame(nltk_books, 
                           index=nltk.corpus.gutenberg.fileids(),
                           columns=['raw_text'] )
 ```
@@ -51,7 +51,7 @@ train.index
 
 Your task is to fit a TfidfVectorizer to the training set with the following specifications: max_features is set to 50, stopwords are removed using the nltk english stopwords list.  The other parameters should be the defaults.  
 
-After fitting the vectorizer, find the word with the highest tf-idf score in Moby Dick.    
+**After fitting the vectorizer, find the word with the highest tf-idf score in Moby Dick. Slack out both the word and tf-idf score, as well as your forked repo showing your work.**
 
 > Hint: Converting the vectorized text into a DataFrame with column names and indices will make your life easier.  Use the following hints to make that happen:  
 >> 1. The TF-IDF vectorizer returns a sparse matrix.  Chain the toarray() method off the vectorizer, then convert that array into a DataFrame.  
@@ -62,3 +62,8 @@ After fitting the vectorizer, find the word with the highest tf-idf score in Mob
     
 
 
+
+
+```python
+
+```
