@@ -65,7 +65,6 @@ After fitting the vectorizer, find the word with the highest tf-idf score in Mob
 
 
 ```python
-#__SOLUTION__
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
